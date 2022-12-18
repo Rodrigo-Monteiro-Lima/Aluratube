@@ -167,5 +167,39 @@
         "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
       }
     ]
+  },
+  "favoritos": {
+    "AluraTubes Favoritos": [
+      {
+        "perfilgithub": "peas"
+      },
+      {
+        "perfilgithub": "omariosouto"
+      },
+      {
+        "perfilgithub": "vweberfroes"
+      },
+      {
+        "perfilgithub": "gabrielfroes"
+      },
+      {
+        "perfilgithub": "rafaballerini"
+      },
+      {
+        "perfilgithub": "robsonvleite"
+      },
+      {
+        "perfilgithub": "diego3g"
+      },
+      {
+        "perfilgithub": "filipedeschamps"
+      },
+      {
+        "perfilgithub": "matheusbattisti"
+      },
+      {
+        "perfilgithub": "lucasmontano"
+      }
+    ]
   }
 }
