@@ -1,4 +1,5 @@
 import config from '../config.json'
+import styled from 'styled-components';
 
 function HomePage() {
   return (
@@ -19,14 +20,21 @@ const Menu = () => {
   )
 }
 
+const StyledHeader = styled.div`
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+`;
 const Header = () => {
   return (
-    <div>
+    <StyledHeader>
       <img src="" alt="banner" />
       <img src={config.github} alt="profile pic" />
       {config.name}
       {config.job}
-    </div>
+    </StyledHeader>
   )
 }
 
