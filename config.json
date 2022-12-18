@@ -1,5 +1,21 @@
 {
   "name": "Rodrigo Monteiro (Rodris)",
   "job": "Desenvolvedor Front-End",
-  "github":"https://avatars.githubusercontent.com/u/108936962?v=4"
+  "github":"https://avatars.githubusercontent.com/u/108936962?v=4",
+  "playlists": {
+    "games": [
+      {
+        "title": "",
+        "url": "",
+        "thumb": ""
+      }
+    ],
+    "front-end": [
+      {
+        "title": "",
+        "url": "",
+        "thumb": ""
+      }
+    ]
+  }
 }

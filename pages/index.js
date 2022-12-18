@@ -1,24 +1,23 @@
-import config from '../config.json'
+import config from '../config.json';
 import styled from 'styled-components';
+import { CSSReset } from '../src/components/CSSReset';
 
 function HomePage() {
   return (
-  <div>
-    <Menu />
-    <Header />
-    <Timeline />
-  </div>
-  )
+    <div>
+      <CSSReset />
+      <Menu />
+      <Header />
+      <Timeline playlists={config.playlists} />
+    </div>
+  );
 }
 
 export default HomePage;
 
-
 const Menu = () => {
-  return (
-    <div>Menu</div>
-  )
-}
+  return <div>Menu</div>;
+};
 
 const StyledHeader = styled.div`
   img {
@@ -46,11 +45,30 @@ const Header = () => {
         </div>
       </section>
     </StyledHeader>
-  )
-}
+  );
+};
 
-const Timeline = () => {
+const Timeline = ({ playlists }) => {
+  const playlistsNames = Object.keys(playlists);
   return (
-    <div>Timeline</div>
-  )
-}
+    <div>
+      {playlistsNames.map((playlistName) => {
+        const videos = playlists[playlistName];
+        console.log(videos);
+        return (
+          <section>
+            <h2>{playlistName}</h2>
+            <div>
+              {videos.map((video) => (
+                <a href={video.url}>
+                  <img src={video.thumb} alt="thumb" />
+                  <span>{video.title}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+  );
+};
