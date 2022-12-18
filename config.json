@@ -1,20 +1,170 @@
 {
   "name": "Rodrigo Monteiro (Rodris)",
   "job": "Desenvolvedor Front-End",
-  "github":"https://avatars.githubusercontent.com/u/108936962?v=4",
+  "github": "https://avatars.githubusercontent.com/u/108936962?v=4",
   "playlists": {
     "games": [
       {
-        "title": "",
-        "url": "",
-        "thumb": ""
+        "title": "Lok'Tar Ogar: For The Horde",
+        "url": "https://www.youtube.com/watch?v=fa9j7HYZEk4",
+        "thumb": "https://img.youtube.com/vi/fa9j7HYZEk4/hqdefault.jpg"
+      },
+      {
+        "title": "o vitor foi pega água - Cuphead #28",
+        "url": "https://www.youtube.com/watch?v=g9CaqfR5UHg",
+        "thumb": "https://img.youtube.com/vi/g9CaqfR5UHg/hqdefault.jpg"
+      },
+      {
+        "title": "Worlds 2022: Fase de Entrada (Dia 6)",
+        "url": "https://www.youtube.com/watch?v=2Z2wPC6SgnY",
+        "thumb": "https://img.youtube.com/vi/2Z2wPC6SgnY/hqdefault.jpg"
+      },
+      {
+        "title": "CLASH DA SELEÇÃO no ARAM! (com Robo, Titan, Esacarry e Brucer)",
+        "url": "https://www.youtube.com/watch?v=PaGKo4KgToY",
+        "thumb": "https://img.youtube.com/vi/PaGKo4KgToY/hqdefault.jpg"
+      },
+      {
+        "title": "Netdecking Estraga o Magic?",
+        "url": "https://www.youtube.com/watch?v=dXihyhYEsEc",
+        "thumb": "https://img.youtube.com/vi/dXihyhYEsEc/hqdefault.jpg"
+      },
+      {
+        "title": "MANUAL SINCERO:PRÉ SEASON 2023!",
+        "url": "https://www.youtube.com/watch?v=wWK7GOUEvV4",
+        "thumb": "https://img.youtube.com/vi/wWK7GOUEvV4/hqdefault.jpg"
+      },
+      {
+        "title": "BRONZES HACKEARAM O LEAGUE OF LEGENDS - MISTERIOS DO BRONZE 5",
+        "url": "https://www.youtube.com/watch?v=FAj3Fuaj338",
+        "thumb": "https://img.youtube.com/vi/FAj3Fuaj338/hqdefault.jpg"
+      },
+      {
+        "title": "DEI COACH PARA UM ATOR DA GLOBO - ALMA DE CHALLENGER",
+        "url": "https://www.youtube.com/watch?v=K2GaHDtV5KU",
+        "thumb": "https://img.youtube.com/vi/K2GaHDtV5KU/hqdefault.jpg"
+      }
+    ],
+    "music": [
+      {
+        "title": "The Best of Mozart",
+        "url": "https://www.youtube.com/watch?v=Rb0UmrCXxVA",
+        "thumb": "https://img.youtube.com/vi/Rb0UmrCXxVA/hqdefault.jpg"
+      },
+      {
+        "title": "Desfrute de música Whiskey Blues | As melhores baladas lentas de blues/rock - fantástico guitarra",
+        "url": "https://www.youtube.com/watch?v=l24WGDjn4dE",
+        "thumb": "https://img.youtube.com/vi/l24WGDjn4dE/hqdefault.jpg"
+      },
+      {
+        "title": "AMV [Anime Mix] ~Ten Million Voices~",
+        "url": "https://www.youtube.com/watch?v=FKLtgamrhpk",
+        "thumb": "https://img.youtube.com/vi/FKLtgamrhpk/hqdefault.jpg"
+      },
+      {
+        "title": "四月は君の嘘 / Your Lie in April OST (Piano)",
+        "url": "https://www.youtube.com/watch?v=VaFRVg7iktU",
+        "thumb": "https://img.youtube.com/vi/VaFRVg7iktU/hqdefault.jpg"
+      },
+      {
+        "title": "Geraldo Azevedo - Dona da Minha Cabeça (Ao Vivo)",
+        "url": "https://www.youtube.com/watch?v=iJ6PbgiylCI",
+        "thumb": "https://img.youtube.com/vi/iJ6PbgiylCI/hqdefault.jpg"
+      },
+      {
+        "title": "Churrasquinho Menos é Mais 2 - Até Que Durou / Tu Mandas no Meu Coração / Adorei / Supera",
+        "url": "https://www.youtube.com/watch?v=KOuw2u7dqFo",
+        "thumb": "https://img.youtube.com/vi/KOuw2u7dqFo/hqdefault.jpg"
+      },
+      {
+        "title": "Five Finger Death Punch - Wrong Side Of Heaven",
+        "url": "https://www.youtube.com/watch?v=o_l4Ab5FRwM",
+        "thumb": "https://img.youtube.com/vi/o_l4Ab5FRwM/hqdefault.jpg"
       }
     ],
     "front-end": [
       {
-        "title": "",
-        "url": "",
-        "thumb": ""
+        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+        "url": "https://youtube.com/watch?v=jOAU81jdi-c",
+        "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+      },
+      {
+        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+        "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
+        "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
+      },
+      {
+        "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
+        "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
+        "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
+      },
+      {
+        "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
+        "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
+        "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
+      },
+      {
+        "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
+        "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
+        "thumb": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
+      },
+      {
+        "title": "Como Foi Programado um App Que Faz Mágica",
+        "url": "https://www.youtube.com/watch?v=I36seuWUe5s",
+        "thumb": "https://img.youtube.com/vi/I36seuWUe5s/hqdefault.jpg"
+      },
+      {
+        "title": "O que todo iniciante em Front End deveria aprender | Como manipular arrays e objetos em JavaScript",
+        "url": "https://www.youtube.com/watch?v=yS7AcF-xRUg",
+        "thumb": "https://img.youtube.com/vi/yS7AcF-xRUg/hqdefault.jpg"
+      },
+      {
+        "title": "5 Erros Históricos do CSS",
+        "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
+        "thumb": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
+      },
+      {
+        "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
+        "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
+        "thumb": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
+      }
+    ],
+    "back-end": [
+      {
+        "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
+        "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
+        "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
+      },
+      {
+        "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
+        "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
+        "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
+      },
+
+      {
+        "title": "O que é o Java? #HipstersPontoTube",
+        "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
+        "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
+      },
+      {
+        "title": "O que é Machine Learning? #HipstersPontoTube",
+        "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
+        "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
+      },
+      {
+        "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
+        "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
+        "thumb": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg"
+      },
+      {
+        "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe | #HipstersPontoTube",
+        "url": "https://www.youtube.com/watch?v=ldRbnpy-qQs",
+        "thumb": "https://img.youtube.com/vi/ldRbnpy-qQs/hqdefault.jpg"
+      },
+      {
+        "title": "O que é o C#? #HipstersPontoTube",
+        "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
+        "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
       }
     ]
   }
