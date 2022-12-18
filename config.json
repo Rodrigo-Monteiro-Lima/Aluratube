@@ -2,6 +2,7 @@
   "name": "Rodrigo Monteiro (Rodris)",
   "job": "Desenvolvedor Front-End",
   "github": "https://avatars.githubusercontent.com/u/108936962?v=4",
+  "bg": "https://marcasmais.com.br/wp-content/uploads/2021/02/tech-divulgacao.jpg",
   "playlists": {
     "games": [
       {
@@ -168,38 +169,26 @@
       }
     ]
   },
-  "favoritos": {
-    "AluraTubes Favoritos": [
-      {
-        "perfilgithub": "peas"
-      },
-      {
-        "perfilgithub": "omariosouto"
-      },
-      {
-        "perfilgithub": "vweberfroes"
-      },
-      {
-        "perfilgithub": "gabrielfroes"
-      },
-      {
-        "perfilgithub": "rafaballerini"
-      },
-      {
-        "perfilgithub": "robsonvleite"
-      },
-      {
-        "perfilgithub": "diego3g"
-      },
-      {
-        "perfilgithub": "filipedeschamps"
-      },
-      {
-        "perfilgithub": "matheusbattisti"
-      },
-      {
-        "perfilgithub": "lucasmontano"
-      }
-    ]
-  }
+  "favorites": [
+    {
+      "thumb": "https://yt3.ggpht.com/Fqr4oo0VR4l5KB2E7frxX00reaPw3oBX5csxGmijKx5UTDPY4xLPW0eYTnzh5TvkqNV35g-HHQ=s88-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@Alura",
+      "name": "Alura"
+    },
+    {
+      "thumb": "https://yt3.ggpht.com/RY9EgTzObHVA8RGhlfVsrHPtKpxhWAbW16T_1I8e74kfjqTbunABUQWBIfOlvzXckSRTMBds=s88-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@diomakethechange",
+      "name": "Dio"
+    },
+    {
+      "thumb": "https://yt3.ggpht.com/ytc/AMLnZu9-n9mDtKOwVMx3_-2zr8H57lHFag5t-0JcJNFPUQ=s88-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@rocketseat",
+      "name": "Rocketseat"
+    },
+    {
+      "thumb": "https://yt3.googleusercontent.com/ytc/AMLnZu9fwc9E-G17B2vMnbYzZBp_NYs4AmCE802y8x08=s88-c-k-c0x00ffffff-no-rj",
+      "url": "https://www.youtube.com/@FilipeDeschamps",
+      "name": "Filipe Deschamps"
+    }
+  ]
 }
