@@ -5,6 +5,15 @@ export const StyledTimeline = styled.div`
   width: 100%;
   padding: 16px;
   overflow: hidden;
+
+  .carousel {
+    cursor: grab;
+    overflow: hidden;
+  }
+
+  .inner-carousel {
+    gap: 25px;
+  }
   /* background-color: ${({ theme }) => theme.backgroundBase}; */
   h2 {
     font-size: 16px;
@@ -19,6 +28,7 @@ export const StyledTimeline = styled.div`
     width: 100%;
     max-width: 210px;
     height: auto;
+    user-select: none;
   }
   section {
     width: 100%;
