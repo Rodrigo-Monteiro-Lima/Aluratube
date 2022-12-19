@@ -4,11 +4,13 @@ export const StyledFavorites = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
-  max-height: 202px;
+  max-height: 220px;
+  background-color: ${({ theme }) => theme.backgroundBase};
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
     text-transform: capitalize;
+    color: ${({ theme }) => theme.textColorBase || '#222222'};
   }
   img {
     font-weight: 500;

@@ -12,6 +12,20 @@ export const StyledMenu = styled.header`
   gap: 16px;
   position: fixed;
   width: 100vw;
+
+  .theme {
+    border: none;
+    background-color: transparent;
+    color: yellow;
+    font-size: 2rem;
+    z-index: 1;
+    cursor: pointer;
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+
   .logo {
     width: 100%;
     max-width: 80px;

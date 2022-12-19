@@ -3,9 +3,9 @@ import AppContext from '../../context/AppContext';
 import { StyledSearch } from './Search.styled';
 
 const Search = () => {
-  const { search, setSearch } = useContext(AppContext);
+  const { search, setSearch, mode } = useContext(AppContext);
   return (
-    <StyledSearch>
+    <StyledSearch theme={mode}>
       <input
         type="text"
         onChange={({ target }) => setSearch(target.value)}

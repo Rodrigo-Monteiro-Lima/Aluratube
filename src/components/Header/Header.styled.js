@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledHeader = styled.div`
+  background-color: ${({ theme }) => theme.backgroundBase};
   img {
     width: 80px;
     height: 80px;
@@ -12,6 +13,7 @@ export const StyledHeader = styled.div`
     width: 100vw;
     padding: 1rem 2rem;
     gap: 1rem;
+    color: ${({ theme }) => theme.textColorBase};
   }
 `;
 

@@ -4,10 +4,10 @@ import { StyledTimeline } from './Timeline.styled';
 import PropTypes from 'prop-types';
 
 const Timeline = ({ playlists }) => {
-  const { search } = useContext(AppContext);
+  const { search, mode } = useContext(AppContext);
   const playlistsNames = Object.keys(playlists);
   return (
-    <StyledTimeline>
+    <StyledTimeline theme={mode}>
       {playlistsNames.map((playlistName) => {
         const videos = playlists[playlistName];
         return (

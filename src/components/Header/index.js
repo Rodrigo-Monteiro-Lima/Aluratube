@@ -1,9 +1,12 @@
 import { StyledBanner, StyledHeader } from './Header.styled';
 import PropTypes from 'prop-types';
+import AppContext from '../../context/AppContext';
+import { useContext } from 'react';
 
 const Header = ({ config: { bg, github, name, job } }) => {
+  const { mode } = useContext(AppContext);
   return (
-    <StyledHeader>
+    <StyledHeader theme={mode}>
       <StyledBanner bg={bg} />
       <section className="user-info">
         <img src={github} alt="profile pic" />

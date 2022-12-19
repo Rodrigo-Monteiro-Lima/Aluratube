@@ -1,13 +1,26 @@
 import Search from '../Search';
 import { StyledMenu } from './Menu.styled';
+import AppContext from '../../context/AppContext';
+import { useContext } from 'react';
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 
 export default function Menu() {
+  const { mode, isDark, handleTheme } = useContext(AppContext);
   return (
-    <StyledMenu>
+    <StyledMenu theme={mode}>
       <div>
         <Logo />
       </div>
       <Search />
+      {isDark ? (
+        <button type="button" onClick={() => handleTheme()} className="theme">
+          <BsFillMoonFill />
+        </button>
+      ) : (
+        <button type="button" onClick={() => handleTheme()} className="theme">
+          <BsFillSunFill />
+        </button>
+      )}
     </StyledMenu>
   );
 }
