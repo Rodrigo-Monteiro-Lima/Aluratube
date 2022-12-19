@@ -1,10 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { StyledRegisterVideo } from './RegisterVideo.styled';
+import useForm from '../hooks/useForm';
 
 const RegisterVideo = ({ theme }) => {
+  const { values, handleImage, handleChange, clearForm } = useForm({
+    initialValues: { title: '', url: '', img: '' },
+  });
+  const { img, title, url } = values;
   const [showForm, setShowForm] = useState(false);
-  const [url, setUrl] = useState(false);
-  const [link, setLink] = useState('');
   return (
     <StyledRegisterVideo theme={theme}>
       <button
@@ -15,7 +18,13 @@ const RegisterVideo = ({ theme }) => {
         +
       </button>
       {showForm && (
-        <form>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            setShowForm((prev) => !prev);
+            clearForm();
+          }}
+        >
           <div>
             <button
               type="button"
@@ -24,7 +33,13 @@ const RegisterVideo = ({ theme }) => {
             >
               X
             </button>
-            <input type="text" placeholder="Video Title" />
+            <input
+              type="text"
+              name="title"
+              placeholder="Video Title"
+              value={title}
+              onChange={handleChange}
+            />
             <select name="playlist" required>
               <option value="" disabled>
                 Playlists
@@ -37,20 +52,17 @@ const RegisterVideo = ({ theme }) => {
             <input
               type="text"
               placeholder="Url"
-              value={link}
-              onChange={({ target }) => setLink(target.value)}
+              name="url"
+              value={url}
+              onChange={handleChange}
             />
-            <button
-              type="button"
-              className="view-thumb"
-              onClick={() => setUrl(link.split('v=')[1])}
-            >
+            <button type="button" className="view-thumb" onClick={handleImage}>
               Thumbnail Preview
             </button>
             <button type="submit">Send</button>
-            {url ? (
+            {img ? (
               <img
-                src={`https://i.ytimg.com/vi/${url}/hqdefault.jpg`}
+                src={`https://i.ytimg.com/vi/${img}/hqdefault.jpg`}
                 alt="thumb"
               />
             ) : (
