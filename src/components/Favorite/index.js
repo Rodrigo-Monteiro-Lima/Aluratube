@@ -9,7 +9,7 @@ const Favorite = ({ list }) => {
   return (
     <StyledFavorites theme={mode}>
       <section>
-        <h2>Aluratubers Favoritos</h2>
+        <h2>Favorites</h2>
         <div>
           {list.map((item) => (
             <FavoriteCard key={item.name} favorite={item} />
