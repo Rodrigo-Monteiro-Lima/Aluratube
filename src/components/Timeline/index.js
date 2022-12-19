@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import AppContext from '../../context/AppContext';
 import { StyledTimeline } from './Timeline.styled';
+import PropTypes from 'prop-types';
 
 const Timeline = ({ playlists }) => {
   const { search } = useContext(AppContext);
@@ -29,6 +30,10 @@ const Timeline = ({ playlists }) => {
       })}
     </StyledTimeline>
   );
+};
+
+Timeline.propTypes = {
+  playlists: PropTypes.shape({}).isRequired,
 };
 
 export default Timeline;

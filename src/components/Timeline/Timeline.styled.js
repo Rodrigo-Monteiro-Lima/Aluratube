@@ -14,12 +14,12 @@ export const StyledTimeline = styled.div`
   .inner-carousel {
     gap: 25px;
   } */
-  /* background-color: ${({ theme }) => theme.backgroundBase}; */
+  background-color: ${({ theme }) => theme.backgroundBase};
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
     text-transform: capitalize;
-    /* color: ${({ theme }) => theme.textColorBase}; */
+    color: ${({ theme }) => theme.textColorBase};
   }
   img {
     aspect-ratio: 16/9;

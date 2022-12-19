@@ -1,4 +1,5 @@
 import FavoriteCard from '../FavoriteCard';
+import PropTypes from 'prop-types';
 import { StyledFavorites } from './Favorite.styled';
 
 const Favorite = ({ list }) => {
@@ -14,6 +15,10 @@ const Favorite = ({ list }) => {
       </section>
     </StyledFavorites>
   );
+};
+
+Favorite.propTypes = {
+  list: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 export default Favorite;

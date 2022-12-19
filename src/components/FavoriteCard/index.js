@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FavoriteCard = ({ favorite: { thumb, url, name } }) => {
   return (
     <a href={url}>
@@ -5,6 +7,14 @@ const FavoriteCard = ({ favorite: { thumb, url, name } }) => {
       <span>{name}</span>
     </a>
   );
+};
+
+FavoriteCard.propTypes = {
+  favorite: PropTypes.shape({
+    thumb: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default FavoriteCard;

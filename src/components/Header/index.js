@@ -1,4 +1,5 @@
 import { StyledBanner, StyledHeader } from './Header.styled';
+import PropTypes from 'prop-types';
 
 const Header = ({ config: { bg, github, name, job } }) => {
   return (
@@ -13,6 +14,15 @@ const Header = ({ config: { bg, github, name, job } }) => {
       </section>
     </StyledHeader>
   );
+};
+
+Header.propTypes = {
+  config: PropTypes.shape({
+    bg: PropTypes.string.isRequired,
+    github: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    job: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Header;
