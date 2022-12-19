@@ -6,14 +6,14 @@ export const StyledTimeline = styled.div`
   padding: 16px;
   overflow: hidden;
 
-  .carousel {
+  /* .carousel {
     cursor: grab;
     overflow: hidden;
   }
 
   .inner-carousel {
     gap: 25px;
-  }
+  } */
   /* background-color: ${({ theme }) => theme.backgroundBase}; */
   h2 {
     font-size: 16px;
@@ -42,8 +42,11 @@ export const StyledTimeline = styled.div`
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px, 1fr);
-      /* overflow-x: scroll; */
+      overflow-x: scroll;
       scroll-snap-type: x mandatory;
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
       /* div {
         position: relative;
       } */

@@ -9,7 +9,7 @@ export const StyledHeader = styled.div`
   .user-info {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 1rem 2rem;
     gap: 1rem;
   }
@@ -21,4 +21,5 @@ export const StyledBanner = styled.div`
   background-size: cover;
   min-height: 230px;
   height: 20vw;
+  width: 100vw;
 `;

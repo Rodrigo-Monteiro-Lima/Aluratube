@@ -1,3 +1,4 @@
+import Search from '../Search';
 import { StyledMenu } from './Menu.styled';
 
 export default function Menu() {
@@ -6,6 +7,7 @@ export default function Menu() {
       <div>
         <Logo />
       </div>
+      <Search />
     </StyledMenu>
   );
 }
