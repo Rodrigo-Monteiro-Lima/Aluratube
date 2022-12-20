@@ -6,8 +6,7 @@ import Favorite from '../components/Favorite';
 import AppProvider from '../context/AppProvider';
 import { useEffect, useState } from 'react';
 
-function HomePage({ supabase }) {
-  const [playlists, setPlaylists] = useState(config.playlists);
+function HomePage({ supabase, playlists, setPlaylists }) {
   const handleVideos = () => {
     supabase
       .from('video')

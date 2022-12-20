@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.0.2",
+    "@radix-ui/react-icons": "^1.1.1",
     "@supabase/supabase-js": "2.2.1",
     "framer-motion": "7.10.2",
     "install": "0.13.0",

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyledRegisterVideo } from './RegisterVideo.styled';
 import useForm from '../hooks/useForm';
 
-const RegisterVideo = ({ theme, supabase }) => {
+const RegisterVideo = ({ theme, supabase, setPlaylists, playlists }) => {
   const { values, handleImage, handleChange, clearForm } = useForm({
     initialValues: { title: '', url: '', img: '', playlist: '' },
   });
@@ -20,13 +20,21 @@ const RegisterVideo = ({ theme, supabase }) => {
       {showForm && (
         <form
           onSubmit={(e) => {
-            e.preventDefault();
-            supabase.from('video').insert({
+            const newVideo = {
               title,
               url,
               thumb: `https://img.youtube.com/vi/${img}/hqdefault.jpg`,
               playlist,
-            });
+            };
+            e.preventDefault();
+            supabase
+              .from('video')
+              .insert(newVideo)
+              .then((response) => {
+                // const newPlaylist = {...playlists, playlists[newVideo.playlist]: [...]}
+                console.log(response);
+              })
+              .catch((e) => console.log(e));
             setShowForm((prev) => !prev);
             clearForm();
           }}
