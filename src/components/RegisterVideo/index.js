@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { StyledRegisterVideo } from './RegisterVideo.styled';
 import useForm from '../hooks/useForm';
 
-const RegisterVideo = ({ theme }) => {
+const RegisterVideo = ({ theme, supabase }) => {
   const { values, handleImage, handleChange, clearForm } = useForm({
-    initialValues: { title: '', url: '', img: '' },
+    initialValues: { title: '', url: '', img: '', playlist: '' },
   });
-  const { img, title, url } = values;
+  const { img, title, url, playlist } = values;
   const [showForm, setShowForm] = useState(false);
   return (
     <StyledRegisterVideo theme={theme}>
@@ -21,6 +21,12 @@ const RegisterVideo = ({ theme }) => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            supabase.from('video').insert({
+              title,
+              url,
+              thumb: `https://img.youtube.com/vi/${img}/hqdefault.jpg`,
+              playlist,
+            });
             setShowForm((prev) => !prev);
             clearForm();
           }}
@@ -39,10 +45,16 @@ const RegisterVideo = ({ theme }) => {
               placeholder="Video Title"
               value={title}
               onChange={handleChange}
+              required
             />
-            <select name="playlist" required>
-              <option value="" disabled>
-                Playlists
+            <select
+              name="playlist"
+              required
+              onChange={handleChange}
+              value={playlist}
+            >
+              <option value="" disabled selected>
+                Playlist
               </option>
               <option value="games">Games</option>
               <option value="music">Music</option>
@@ -55,6 +67,7 @@ const RegisterVideo = ({ theme }) => {
               name="url"
               value={url}
               onChange={handleChange}
+              required
             />
             <button type="button" className="view-thumb" onClick={handleImage}>
               Thumbnail Preview

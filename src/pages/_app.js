@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useLayoutEffect } from 'react';
 import { CSSReset } from '../components/CSSReset.styled';
 import RegisterVideo from '../components/RegisterVideo';
 import AppContext from '../context/AppContext';
@@ -9,12 +9,12 @@ function ProviderWrapper({ children }) {
 }
 
 function MyApp({ Component, pageProps }) {
-  const { mode } = useContext(AppContext);
+  const { mode, supabase } = useContext(AppContext);
   return (
     <>
       <CSSReset />
-      <Component {...pageProps} />
-      <RegisterVideo theme={mode} />
+      <Component {...pageProps} supabase={supabase} />
+      <RegisterVideo theme={mode} supabase={supabase} />
     </>
   );
 }
